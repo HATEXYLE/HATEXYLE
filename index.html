@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<title>Xyle</title>
 <body>
 <style>
 h1{
@@ -16,4 +15,16 @@ h1{
 <h1><b>HATE XYLE</h1>
 
 </body>
+ <script type='text/javascript'> 
+title = "HATEXYLE   ";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
+}
+scrolltitle();
+</script>
+  
 </html>
